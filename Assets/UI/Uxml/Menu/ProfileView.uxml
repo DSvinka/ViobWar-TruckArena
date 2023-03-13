@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="StatusMessage" src="project://database/Assets/UI/Uxml/Menu/Components/StatusMessage.uxml?fileID=9197481963319205126&amp;guid=45c753964f9ee8d40b560066e3beb43b&amp;type=3#StatusMessage" />
+    <Style src="project://database/Assets/UI/Uss/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=1da7b92a4cfe4d04a966349252e4159d&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="ProfileWindow" class="menu-window" style="flex-grow: 1; flex-direction: row; align-self: stretch; justify-content: space-around; height: 1080px; width: 1920px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
+        <ui:VisualElement name="Stats" style="flex-grow: 1; background-color: rgba(32, 233, 184, 0); align-items: center; justify-content: center; align-self: center; min-height: auto; min-width: auto; transform-origin: left;">
+            <ui:VisualElement name="Rounds" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; align-self: auto; min-width: auto; min-height: auto; align-items: flex-start; flex-basis: auto;">
+                <ui:Label tabindex="-1" text="Статистика раундов" display-tooltip-when-elided="true" name="RoundsStatsTitle" style="font-size: 32px; -unity-text-align: middle-center;" />
+                <ui:VisualElement name="RoundsCard" class="profile-card">
+                    <ui:Label tabindex="-1" text="Раундом сыграно:" display-tooltip-when-elided="true" name="RoundsTitle" style="font-size: 28px;" />
+                    <ui:Label tabindex="-1" text="20" display-tooltip-when-elided="true" name="RoundsCount" style="font-size: 28px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="WinsCard" class="profile-card">
+                    <ui:Label tabindex="-1" text="Количество побед:" display-tooltip-when-elided="true" name="WinRoundsTitle" style="font-size: 28px;" />
+                    <ui:Label tabindex="-1" text="20" display-tooltip-when-elided="true" name="WinRoundsCount" style="font-size: 28px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="LoseCard" class="profile-card">
+                    <ui:Label tabindex="-1" text="Количество поражений:" display-tooltip-when-elided="true" name="LoseRoundsTitle" style="font-size: 28px;" />
+                    <ui:Label tabindex="-1" text="20" display-tooltip-when-elided="true" name="LoseRoundsCount" style="font-size: 28px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Game" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; align-self: auto; min-width: auto; min-height: auto; align-items: flex-start; flex-basis: auto;">
+                <ui:Label tabindex="-1" text="Статистика игры" display-tooltip-when-elided="true" name="RoundsStatsTitle" style="font-size: 32px; -unity-text-align: middle-center;" />
+                <ui:VisualElement name="KillsCard" class="profile-card">
+                    <ui:Label tabindex="-1" text="Противников уничтожено:" display-tooltip-when-elided="true" name="KillsTitle" style="font-size: 28px;" />
+                    <ui:Label tabindex="-1" text="20" display-tooltip-when-elided="true" name="KillsCount" style="font-size: 28px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="DeathsCard" class="profile-card">
+                    <ui:Label tabindex="-1" text="Количество смертей:" display-tooltip-when-elided="true" name="DeathsTitle" style="font-size: 28px;" />
+                    <ui:Label tabindex="-1" text="20" display-tooltip-when-elided="true" name="DeathsCount" style="font-size: 28px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Actions" style="flex-grow: 1; background-color: rgba(2, 255, 0, 0); align-items: center; justify-content: space-around;">
+            <ui:VisualElement name="Economy" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; align-self: auto; min-width: auto; min-height: auto; align-items: flex-start; flex-basis: auto;">
+                <ui:Label tabindex="-1" text="Валюты" display-tooltip-when-elided="true" name="EconomyTitle" style="font-size: 32px; -unity-text-align: middle-center;" />
+                <ui:VisualElement name="MoneyCard" class="profile-card">
+                    <ui:Label tabindex="-1" text="Количество денег:" display-tooltip-when-elided="true" name="MoneyTitle" style="font-size: 28px;" />
+                    <ui:Label tabindex="-1" text="20" display-tooltip-when-elided="true" name="MoneyCount" style="font-size: 28px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button display-tooltip-when-elided="true" name="CloseButton" class="menu-close-button" />
+        <ui:Instance template="StatusMessage" name="StatusMessage" style="position: absolute; width: 100%; height: 75px; align-self: center; align-items: center; justify-content: flex-end; bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

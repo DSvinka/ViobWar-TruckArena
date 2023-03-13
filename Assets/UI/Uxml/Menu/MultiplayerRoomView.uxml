@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="StatusMessage" src="project://database/Assets/UI/Uxml/Menu/Components/StatusMessage.uxml?fileID=9197481963319205126&amp;guid=45c753964f9ee8d40b560066e3beb43b&amp;type=3#StatusMessage" />
+    <Style src="project://database/Assets/UI/Uss/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=1da7b92a4cfe4d04a966349252e4159d&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="RoomWindow" class="menu-window" style="flex-direction: row; height: 100%;">
+        <ui:VisualElement name="RoomWindowTItleCard" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; top: -5px; margin-left: 0; padding-left: 20px; padding-right: 20px; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Комната" display-tooltip-when-elided="true" name="RoomWindowTitle" style="font-size: 30px; -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:ListView focusable="true" name="RoomPlayersList" style="flex-direction: column; align-items: center; width: 60%; margin-top: 65px; margin-bottom: 65px; margin-left: 65px; margin-right: 65px; border-left-color: rgb(101, 101, 101); border-right-color: rgb(101, 101, 101); border-top-color: rgb(101, 101, 101); border-bottom-color: rgb(101, 101, 101); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px;" />
+        <ui:VisualElement name="SettingsCard" class="profile-card" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; height: 70%; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px; flex-direction: column;">
+            <ui:Button text="Запустить Игру" display-tooltip-when-elided="true" name="StartGameButton" class="menu-button" style="justify-content: flex-start; margin-top: 4px; margin-bottom: 4px;" />
+            <ui:Button text="Выйти" display-tooltip-when-elided="true" name="LeaveButton" class="menu-button" style="justify-content: flex-start; background-color: rgb(152, 60, 52); margin-top: 4px; margin-bottom: 4px;" />
+        </ui:VisualElement>
+        <ui:Instance template="StatusMessage" name="StatusMessage" style="position: absolute; width: 100%; height: 75px; align-self: center; align-items: center; justify-content: flex-end; bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

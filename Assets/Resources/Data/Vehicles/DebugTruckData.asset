@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7c252219c6442ab588359da9cf00b7, type: 3}
+  m_Name: DebugTruckData
+  m_EditorClassIdentifier: 
+  _vehiclePrefabPath: Prefabs/Vehicles/DebugTruck
+  _engineSound: {fileID: 8300000, guid: 0d81ab0c5e3d6554eb76de393fd0b3f0, type: 3}
+  _damageSound: {fileID: 8300000, guid: 4474c86945c9e0c49babff7ff151863d, type: 3}
+  _explosionSound: {fileID: 8300000, guid: c97cc5b9b92282844bf6323d8506ab9a, type: 3}
+  _speedMax: 5
+  _speedMin: -5
+  _acceleration: 3
+  _brakeSpeed: 10
+  _reverseSpeed: 3
+  _idleSlowdown: 10
+  _motorTorque: 1000
+  _steerSpeed: 80
+  _steerAngle: 45

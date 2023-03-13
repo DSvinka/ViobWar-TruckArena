@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=1da7b92a4cfe4d04a966349252e4159d&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="LobbyRoomItem" class="profile-card" style="width: 1200px; -unity-text-align: middle-center; justify-content: space-around; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); align-self: center; height: 100px;">
+        <ui:Label tabindex="-1" text="Комната игрока Test" display-tooltip-when-elided="true" name="RoomTitle" style="font-size: 25px;" />
+        <ui:Label tabindex="-1" text="2 / 10" display-tooltip-when-elided="true" name="RoomPlayerCount" style="font-size: 25px;" />
+        <ui:Label tabindex="-1" text="Открыт" display-tooltip-when-elided="true" name="RoomStatusTitle" style="font-size: 25px;" />
+        <ui:Button text="Подключится" display-tooltip-when-elided="true" name="RoomJoinButton" class="menu-button" style="width: 20%;" />
+    </ui:VisualElement>
+</ui:UXML>

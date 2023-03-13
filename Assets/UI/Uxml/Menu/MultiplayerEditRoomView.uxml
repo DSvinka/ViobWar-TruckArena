@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=1da7b92a4cfe4d04a966349252e4159d&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="EditRoomWindow" class="menu-window" style="flex-direction: row; margin-top: 2%; margin-bottom: 2%; height: 1080px;">
+        <ui:Button text="&#10;" display-tooltip-when-elided="true" name="CloseButton" class="menu-close-button" />
+        <ui:VisualElement name="EditRoomTitleCard" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; top: -5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; padding-right: 20px; padding-left: 20px; justify-content: center; font-size: 32px;">
+            <ui:Label tabindex="-1" text="Создание комнаты" display-tooltip-when-elided="true" name="EditRoomTitle" style="align-items: center; align-self: center; font-size: 32px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="GeneralSettings" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: center; align-items: center;">
+            <ui:TextField picking-mode="Ignore" label="Имя комнаты" name="RoomNameInput" class="menu-text-input" style="height: 120px;" />
+            <ui:SliderInt picking-mode="Ignore" label="Вместимость лобби" value="2" high-value="16" low-value="1" show-input-field="true" name="RoomSizeInput" style="width: 600px; height: 120px; align-items: flex-start; justify-content: space-around; align-self: auto; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); font-size: 30px; flex-shrink: 1; flex-direction: column; -unity-text-align: upper-left; margin-bottom: 20px; margin-top: 20px; margin-left: 20px; margin-right: 20px;" />
+            <ui:SliderInt picking-mode="Ignore" label="Количество ботов" value="0" high-value="16" low-value="0" show-input-field="true" name="RoomBotsSizeInput" style="width: 600px; height: 120px; align-items: flex-start; justify-content: space-around; align-self: auto; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); font-size: 30px; flex-shrink: 1; flex-direction: column; -unity-text-align: upper-left; margin-top: 20px; margin-bottom: 20px; margin-left: 20px; margin-right: 20px;" />
+            <ui:TextField picking-mode="Ignore" label="Пароль от комнаты" name="RoomPasswordInput" class="menu-text-input" style="height: 170px;">
+                <ui:Label tabindex="-1" text="Оставьте пустым для создания открытой комнаты" display-tooltip-when-elided="true" name="Hint" style="font-size: 24px; color: rgb(101, 98, 98);" />
+            </ui:TextField>
+        </ui:VisualElement>
+        <ui:Button text="Создать комнату" display-tooltip-when-elided="true" name="CreateRoomButton" class="menu-button" style="position: absolute; bottom: 50px; justify-content: flex-end; width: 50%;" />
+    </ui:VisualElement>
+</ui:UXML>

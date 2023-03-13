@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=1da7b92a4cfe4d04a966349252e4159d&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="StatusMessagePanel" style="flex-grow: 1; background-color: rgb(212, 53, 53); position: absolute; bottom: -5px; transform-origin: bottom; width: 50%; height: 75px; border-top-left-radius: 50px; border-top-right-radius: 50px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; align-self: center; justify-content: center; align-items: center; flex-direction: row;">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="StatusMessageText" style="height: 100%; -unity-text-align: middle-center; width: 100%; font-size: 32px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+        <ui:Button display-tooltip-when-elided="true" name="StatusMessageCloseButton" class="menu-close-button" style="height: 75px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; width: 75px; justify-content: center; align-self: flex-end; align-items: center; top: -5px; right: -5px; border-bottom-left-radius: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

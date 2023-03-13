@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="StatusMessage" src="project://database/Assets/UI/Uxml/Menu/Components/StatusMessage.uxml?fileID=9197481963319205126&amp;guid=45c753964f9ee8d40b560066e3beb43b&amp;type=3#StatusMessage" />
+    <Style src="project://database/Assets/UI/Uss/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=1da7b92a4cfe4d04a966349252e4159d&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="AuthWindow" class="menu-window" style="flex-direction: row; height: 1080px;">
+        <ui:VisualElement name="CategoryButtons" style="flex-grow: 1; background-color: rgb(207, 207, 207); position: absolute; top: -5px; align-self: center; align-items: flex-start; height: 100px; width: 500px; flex-direction: row; justify-content: center; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+            <ui:Label tabindex="-1" text="Авторизация" display-tooltip-when-elided="true" style="align-items: center; justify-content: center; align-self: center; font-size: 32px;" />
+        </ui:VisualElement>
+        <ui:Button display-tooltip-when-elided="true" name="CloseButton" class="menu-close-button" style="top: -7px; right: -9px;" />
+        <ui:VisualElement name="Auth" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: center; align-self: center; display: flex;">
+            <ui:Label tabindex="-1" text="Авторизация" display-tooltip-when-elided="true" name="LoginTitle" style="align-items: center; font-size: 32px;" />
+            <ui:TextField picking-mode="Ignore" value="Login" name="LoginUsernameInput" multiline="false" is-delayed="false" readonly="false" password="false" class="menu-text-input" style="overflow: hidden; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            <ui:TextField picking-mode="Ignore" value="Password" name="LoginPasswordInput" password="true" class="menu-text-input" style="font-size: 32px; justify-content: center; align-self: auto; align-items: center; flex-direction: column; width: 600px; height: 100px;" />
+            <ui:Button text="Авторизоваться" display-tooltip-when-elided="true" name="LoginButton" class="menu-button" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Register" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: center; align-self: center;">
+            <ui:Label tabindex="-1" text="Регистрация" display-tooltip-when-elided="true" name="RegisterTitle" style="align-items: center; font-size: 32px;" />
+            <ui:TextField picking-mode="Ignore" value="EMail" name="RegisterEmailInput" multiline="false" is-delayed="false" readonly="false" password="false" class="menu-text-input" style="overflow: hidden; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            <ui:TextField picking-mode="Ignore" value="Логин (Никнейм)" name="RegisterUsernameInput" multiline="false" is-delayed="false" readonly="false" password="false" class="menu-text-input" style="overflow: hidden; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            <ui:TextField value="Пароль" name="RegisterPasswordInput" password="false" mask-character="*" class="menu-text-input" style="font-size: 32px; justify-content: center; align-self: auto; align-items: center; flex-direction: column; width: 600px; height: 100px;" />
+            <ui:TextField picking-mode="Ignore" value="Повторите пароль" name="RegisterPasswordRepeatInput" password="false" class="menu-text-input" style="font-size: 32px; justify-content: center; align-self: auto; align-items: center; flex-direction: column; width: 600px; height: 100px;" />
+            <ui:Button text="Зарегистрироваться" display-tooltip-when-elided="true" name="RegisterButton" class="menu-button" />
+        </ui:VisualElement>
+        <ui:Instance template="StatusMessage" name="StatusMessage" style="position: absolute; width: 100%; height: 75px; align-self: center; align-items: center; justify-content: flex-end; bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

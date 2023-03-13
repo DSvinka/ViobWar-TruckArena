@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=1da7b92a4cfe4d04a966349252e4159d&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="Overlay" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.45); justify-content: center; align-items: center; align-self: stretch; width: 1920px; height: 1080px; position: relative; top: 2px; bottom: -2px; flex-shrink: 1; left: 2px; right: -2px; overflow: visible;">
+        <ui:VisualElement name="WindowCard" class="profile-card" style="flex-grow: 1; width: 60%; height: 60%; position: absolute; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); flex-direction: column; align-items: center; justify-content: space-around; align-self: auto;">
+            <ui:Label tabindex="-1" text="Вы проиграли!" display-tooltip-when-elided="true" name="WindowText" style="font-size: 32px; -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 0; -unity-font-style: bold; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0); text-shadow: 0 0 3px rgb(0, 0, 0); letter-spacing: 2px;" />
+            <ui:Button text="Выйти в меню" display-tooltip-when-elided="true" name="LeaveRoomButton" class="menu-category-button" style="height: 50px; width: 300px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
